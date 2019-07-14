@@ -10,7 +10,7 @@ pipeline {
     {
 		stage('trigger the docker-compose') {
 			steps {
-				sh script: 'docker-compose -f docker-compose.yml up -d --build'
+				sh script: 'docker-compose up -d --build'
 				
 			}
 		}
